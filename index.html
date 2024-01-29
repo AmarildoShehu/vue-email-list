@@ -41,7 +41,7 @@
       <h1>Indirizzi Email Generati</h1>
 
       <ul>
-        <li id="myList"></li>
+        <li v-for="email in emails" :key="email">{{ email }}</li>
       </ul>
     </div>
   </body>

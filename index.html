@@ -40,7 +40,7 @@
     <div id="root">
       <h1>Indirizzi Email Generati</h1>
 
-      <ul>
+      <ul v-if="emails.lenght === numOfEmails">
         <li v-for="email in emails" :key="email">{{ email }}</li>
       </ul>
     </div>
